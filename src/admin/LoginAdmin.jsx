@@ -8,8 +8,12 @@ const LoginAdmin = () => {
         <div className=" h-120 w-120 p-4 ">
           <form action="">
             <h1 className="mb-6">
-              <span className="text-5xl font-bold text-donor">Donor</span>
-              <span className="text-5xl font-bold text-pdg">.Pdg</span>
+              <span className="text-5xl font-bold text-donor cursor-pointer">
+                Donor
+              </span>
+              <span className="text-5xl font-bold text-pdg cursor-pointer">
+                .Pdg
+              </span>
             </h1>
             <div className="h-90 w-96">
               <input
@@ -17,19 +21,24 @@ const LoginAdmin = () => {
                 name="email"
                 id="email"
                 placeholder="Email"
-                className="border-solid border-2 border-border rounded-md block w-full h-8 mb-5 p-4"
+                className="border-solid border-2 border-border rounded-md cursor-pointer block w-full h-8 mb-5 p-4"
               />
               <input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
-                className="border-solid border-2 border-border rounded-md block w-full h-8 mb-1 p-4"
+                className="border-solid border-2 border-border rounded-md block w-full h-8 cursor-pointer mb-1 p-4"
               />
             </div>
             <div className="flex">
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="" className="p-1">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                className="cursor-pointer"
+              />
+              <label for="" className="p-1 cursor-pointer">
                 Remember me
               </label>
               <a href="" className="ml-auto text-xs mt-2">
@@ -57,7 +66,7 @@ const LoginAdmin = () => {
             <span className="text-2xl ">"</span>
           </p>
           <br />
-          <p className=" text-2xl space-x-4 ">-Sujiwo Tejo-</p>
+          <p className="not-italic text-xl space-x-4 ">-Sujiwo Tejo-</p>
         </div>
       </div>
     </div>
