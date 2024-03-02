@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 const LoginAdmin = () => {
   return (
@@ -15,20 +18,37 @@ const LoginAdmin = () => {
                 .Pdg
               </span>
             </h1>
-            <div className="h-90 w-96">
+            <div className="static">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                style={{ color: "#878787" }}
+                size="xl"
+                className="absolute bottom-[345px] left-[140px] "
+              />
+            </div>
+            <div className="h-90 w-96 block">
               <input
                 type="text"
                 name="email"
                 id="email"
                 placeholder="Email"
-                className="border-solid border-2 border-border rounded-md cursor-pointer block w-full h-8 mb-5 p-4"
+                className="border-solid border-2 border-border rounded-md cursor-pointer block w-full h-8 mb-5 p-5 pl-10 "
               />
+
               <input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
-                className="border-solid border-2 border-border rounded-md block w-full h-8 cursor-pointer mb-1 p-4"
+                className="border-solid border-2 border-border rounded-md block w-full h-8 cursor-pointer mb-1 p-5 pl-10 "
+              />
+            </div>
+            <div className="static">
+              <FontAwesomeIcon
+                icon={faLock}
+                style={{ color: "#878787" }}
+                size="xl"
+                className="absolute bottom-[282px] left-[140px]"
               />
             </div>
             <div className="flex">

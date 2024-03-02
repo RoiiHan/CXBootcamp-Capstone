@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../index.css";
-import boyjpg from "../image/IMG_20220430_200929_686.jpg";
+import Profil from '../image/profil1.jpeg';
 import frame from "../component/Frame.png";
 import droplet from "../component/droplet-fill.png";
 import fileearmark from "../component/file-earmark-fill.png";
@@ -32,18 +32,18 @@ const InputArtikel = () => {
             <div className="w-[600px] text-right p-4">
               <div>
                 <span className="font-poppins font-semibold w-[600px]">
-                  Dr.Roihan Tauhid
+                  Dr.fadel Muhammad
                 </span>
               </div>
               <div className="mt-[-5px]">
                 <span className="text-[13px]">Ahli tht</span>
               </div>
             </div>
-            <div className="flex pt-0  w-16 h-[60px] mt-2  ">
+            <div className="flex pt-0  w-[60px] h-[60px] mt-3  ">
               <img
-                src={boyjpg}
+                src={Profil}
                 alt="Profil"
-                className="w-full h-auto rounded-full"
+                className="w-full h-auto rounded-full w-[50px] h-[50px]"
               />
             </div>
           </div>
