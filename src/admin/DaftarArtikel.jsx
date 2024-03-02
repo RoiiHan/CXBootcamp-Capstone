@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
-const InputArtikel = () => {
+const DaftarArtikel = () => {
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -88,7 +88,7 @@ const InputArtikel = () => {
                 // onClick={() => setClicked(true)}
                 className="p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md"
               >
-                <Link to="/DaftarArtikel" className="flex">
+                <Link to="/Daftar`Artikel" className="flex">
                   <img
                     src={pen}
                     alt="frame"
@@ -129,50 +129,31 @@ const InputArtikel = () => {
         </div>
 
         {/* SECTION HALAMAN */}
-        <div className="bg-white ml-3 rounded-md h-[700px] w-[850px]">
+        <div className="bg-white ml-2 rounded-md h-[700px] w-full ">
           <div className="">
-            <div className="">
-              <div className="m-6 ml-8  p-auto h-[450px]">
-                <span className="text-pdg font-bold text-[20px]">
-                  INPUT POSTINGAN
-                </span>{" "}
-                <span className="text-donor font-bold text-[20px]">
-                  ARTIKEL KESEHATAN
-                </span>
-                <form action="" className="mt-5">
-                  <input type="file" name="foto" id="" className="" />
-                  <p>
-                    <input
-                      type="text"
-                      placeholder="Penulis"
-                      className="border-border border-2 rounded-md w-full h-10 p-4 mt-4"
-                    />
-                  </p>
-                  <p>
-                    <input
-                      type="text"
-                      placeholder="Judul"
-                      className="border-border border-2 rounded-md w-full h-10 p-4 mt-4"
-                    />
-                  </p>
-                  <p>
-                    <textarea
-                      name="textarea"
-                      id=""
-                      cols="40"
-                      rows="10"
-                      placeholder="Ketik disini..."
-                      className="border-border border-2 w-full p-4 mb-8 mt-4"
-                    ></textarea>
-                  </p>
-                  <button className="w-[120px] h-[42px] bg-donor p-auto text-white text-[18px] rounded-md">
-                    Simpan
-                  </button>
-                  <button className="w-[90px] h-[42px]  border-solid border-[3px] border-donor p-auto ml-5 text-donor text-[18px] rounded-md">
-                    Batal
-                  </button>
-                </form>
-              </div>
+            <div className="m-8 ml-[80px]  p-auto h-[450px]">
+              <span className="text-pdg font-bold text-[20px]">
+                DAFTAR POSTINGAN
+              </span>{" "}
+              <span className="text-donor font-bold text-[20px]">
+                ARTIKEL KESEHATAN
+              </span>
+              <form action="" className="mt-3 flex">
+                <input
+                  type="text"
+                  name="search"
+                  id=""
+                  className=" border-border border-2 rounded-md w-[600px] h-10 p-4 "
+                  placeholder="Cari artikel"
+                />
+
+                <Link
+                  to="/InputArtikel"
+                  className="bg-tambahartikel rounded-md ml-[100px] w-[200px] h-10 text-white p-[8px]"
+                >
+                  Tambah Artikel
+                </Link>
+              </form>
             </div>
           </div>
         </div>
@@ -181,4 +162,4 @@ const InputArtikel = () => {
   );
 };
 
-export default InputArtikel;
+export default DaftarArtikel;
