@@ -8,6 +8,9 @@ export default {
         pdg: "#3F3F3F",
         border: "#878787",
         tambahartikel: "#00DC16",
+        bguser: "#C92B3C",
+        borderuser: "#A0A0A0",
+        textuser: "#606161",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":

@@ -3,10 +3,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginAdmin from "./admin/LoginAdmin";
 import InputArtikel from "./admin/InputArtikel";
 import DaftarArtikel from "./admin/DaftarArtikel";
+import LoginUser from "./user/LoginUser";
+import RegisterUser from "./user/RegisterUser";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/LoginAdmin",
     element: <LoginAdmin />,
   },
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: "/DaftarArtikel",
     element: <DaftarArtikel />,
+  },
+  {
+    path: "/",
+    element: <LoginUser />,
+  },
+  {
+    path: "/RegisterUser",
+    element: <RegisterUser />,
   },
 ]);
 
