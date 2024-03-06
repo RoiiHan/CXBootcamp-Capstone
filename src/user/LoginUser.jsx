@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import google from "../component/Logo Google.png";
-import apple from "../component/Applee.png";
-import fb from "../component/fb.png";
+import google from "../component/user/Logo Google.png";
+import apple from "../component/user/Applee.png";
+import fb from "../component/user/fb.png";
 
 const LoginUser = () => {
   return (
@@ -54,7 +54,7 @@ const LoginUser = () => {
               <span className="text-donor">Kebijakan Privasi </span>kami
             </div>
             <div className="mt-[50px] font-bold text-[15px] text-textuser">
-              Belum punya akun? <span className="text-donor">Buat Baru</span>
+              Belum punya akun? <span className="text-donor`">Buat Baru</span>
             </div>
           </form>
         </div>

@@ -5,6 +5,7 @@ import InputArtikel from "./admin/InputArtikel";
 import DaftarArtikel from "./admin/DaftarArtikel";
 import LoginUser from "./user/LoginUser";
 import RegisterUser from "./user/RegisterUser";
+import Beranda from "./user/Beranda";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/RegisterUser",
     element: <RegisterUser />,
+  },
+  {
+    path: "/Beranda",
+    element: <Beranda />,
   },
 ]);
 

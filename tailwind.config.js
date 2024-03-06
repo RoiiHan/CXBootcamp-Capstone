@@ -10,7 +10,9 @@ export default {
         tambahartikel: "#00DC16",
         bguser: "#C92B3C",
         borderuser: "#A0A0A0",
-        textuser: "#606161",
+        textuserabu: "#606161",
+        textuserred: "#FFA9A9",
+        donorburam: "#FFA9A9",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":
