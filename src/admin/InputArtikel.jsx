@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../index.css";
-import Profil from '../image/profil1.jpeg';
+import Profil from "../image/profil1.jpeg";
 import frame from "../component/Frame.png";
 import droplet from "../component/droplet-fill.png";
 import fileearmark from "../component/file-earmark-fill.png";
@@ -9,11 +9,14 @@ import people from "../component/people-fill.png";
 import peoplemin from "../component/person-dash-fill.png";
 import peopleplush from "../component/person-plus-fill.png";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import imguplod from "../component/user/image-fill.png";
 
 const InputArtikel = () => {
-  const [clicked, setClicked] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
 
   return (
     <div className="h-screen font-poppins">
@@ -54,33 +57,39 @@ const InputArtikel = () => {
         <div className="bg-white w-52 h-[400px] flex  rounded-md">
           <nav className="text-border w-full cursor-pointer  ">
             <ul className=" flex flex-col text-[14px] ">
-              <li className=" p-[25px] pt-[10px] mt-[10px] h-10 flex">
-                <img
-                  src={frame}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />
-                Dashboard
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
-                Input data
-              </li>
-              <li className=" p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                <img
-                  src={droplet}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />
-                Gol Darah
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                <img
-                  src={fileearmark}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />
-                Persyaratan
-              </li>
+              <Link to="/LoginAdmin">
+                <li className=" p-[25px] pt-[10px] mt-[10px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 h-10 flex">
+                  <img
+                    src={frame}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />
+                  Dashboard
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
+                  Input data
+                </li>
+                <li className=" p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                  <img
+                    src={droplet}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />
+                  Gol Darah
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                  <img
+                    src={fileearmark}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />
+                  Persyaratan
+                </li>
+              </Link>
               <li
                 // className={`p-[25px] pt-[10px] h-10 ${
                 //   clicked ? "bg-donor text-white rounded-md" : "hover:bg-donor "
@@ -97,33 +106,41 @@ const InputArtikel = () => {
                   Artikel
                 </Link>
               </li>
-              <li className="p-[25px] pt-[10px] h-10  text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                Informasi
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                <img
-                  src={people}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />{" "}
-                Pendonor
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                <img
-                  src={peoplemin}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />{" "}
-                Butuh Darah
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                <img
-                  src={peopleplush}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />{" "}
-                Boking Darah
-              </li>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10  text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  Informasi
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  <img
+                    src={people}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />{" "}
+                  Pendonor
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  <img
+                    src={peoplemin}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />{" "}
+                  Butuh Darah
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  <img
+                    src={peopleplush}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />{" "}
+                  Boking Darah
+                </li>
+              </Link>
             </ul>
           </nav>
         </div>
@@ -140,7 +157,32 @@ const InputArtikel = () => {
                   ARTIKEL KESEHATAN
                 </span>
                 <form action="" className="mt-5">
-                  <input type="file" name="foto" id="" className="" />
+                  <div className="flex flex-col border-[1px] border-black items-center justify-center w-[300px] h-[200px] rounded-md p-4 bg-bgimage">
+                    <img src={imguplod} className="pt-5" alt="" />
+                    <label
+                      htmlFor="file-upload"
+                      className=" text-[16px] text-textimg  cursor-pointer"
+                    >
+                      Unggah Foto
+                    </label>
+                    <div className="text-center text-[12px] text-textimg">
+                      Maks 5 MB*
+                    </div>
+                    <input
+                      id="file-upload"
+                      type="file"
+                      className="hidden"
+                      onChange={handleChange}
+                    />
+
+                    <div className="text-center mt-4">
+                      {selectedFile && (
+                        <span className="text-gray-500">
+                          File yang dipilih: {selectedFile.name}
+                        </span>
+                      )}
+                    </div>
+                  </div>
                   <p>
                     <input
                       type="text"

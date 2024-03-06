@@ -6,6 +6,9 @@ import DaftarArtikel from "./admin/DaftarArtikel";
 import LoginUser from "./user/LoginUser";
 import RegisterUser from "./user/RegisterUser";
 import Beranda from "./user/Beranda";
+import BerandaAwal from "./user/BerandaAwal";
+import Persyaratan from "./user/Persyaratan";
+import IsiFormulir from "./user/IsiFormulir";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +24,11 @@ const router = createBrowserRouter([
     element: <DaftarArtikel />,
   },
   {
-    path: "/",
+    path: "/DaftarArtikel",
+    element: <DaftarArtikel />,
+  },
+  {
+    path: "/LoginUser",
     element: <LoginUser />,
   },
   {
@@ -29,8 +36,20 @@ const router = createBrowserRouter([
     element: <RegisterUser />,
   },
   {
+    path: "/",
+    element: <BerandaAwal />,
+  },
+  {
     path: "/Beranda",
     element: <Beranda />,
+  },
+  {
+    path: "/Persyaratan",
+    element: <Persyaratan />,
+  },
+  {
+    path: "/IsiFormulir",
+    element: <IsiFormulir />,
   },
 ]);
 

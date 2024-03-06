@@ -13,6 +13,9 @@ export default {
         textuserabu: "#606161",
         textuserred: "#FFA9A9",
         donorburam: "#FFA9A9",
+        bgdashbord: "#F2F2F2",
+        bgimage: "#f7f7f7",
+        textimg: "#9D9D9D",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":

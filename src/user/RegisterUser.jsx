@@ -9,7 +9,9 @@ const RegisterUser = () => {
     <div className="font-poppins bg-bguser">
       <div className="p-8 flex justify-end text-white ">
         {" "}
-        <Link className="text-[20px]">X</Link>
+        <Link to="/" className="text-[20px]">
+          X
+        </Link>
       </div>
       <div className="text-center  pb-10">
         <div className="text-white text-[44px] font-bold">Buat Akun Baru</div>
@@ -41,7 +43,7 @@ const RegisterUser = () => {
               className="w-[500px] text-[15px] p-5 pl-5 font-semibold mt-4 h-[60px] border-borderuser border-2 rounded-md"
             />
             <Link
-              to="/LoginAdmin"
+              to="/"
               className="bg-bguser h-[60px] rounded-3xl font-semibold mt-4 text-white mb-[20px] font-bold pt-4"
             >
               Daftar
