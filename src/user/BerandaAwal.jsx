@@ -12,7 +12,7 @@ import image6 from "../component/user/chat 1.png";
 import image7 from "../component/user/image 1.png";
 import image8 from "../component/user/image 2.png";
 import twiter from "../component/user/ri_twitter-line.png";
-import fb from "../component/user/Vector.png";
+import fb from "../component/user/circum_facebook.png";
 import ig from "../component/user/Vector (1).png";
 import yt from "../component/user/ri_youtube-line.png";
 import tt from "../component/user/ic_baseline-tiktok.png";
@@ -21,7 +21,7 @@ const BerandaAwal = () => {
   return (
     <div className="font-poppins bg-white">
       {/* Navbar */}
-      <div className=" p-5 flex flex-row justify-between  bg-donor  h-[80px]">
+      <div className=" p-5 flex flex-row justify-between sticky top-0 z-10 bg-donor  h-[80px]">
         <span className=" text-white font-bold text-[24px]">
           Donor.<span className="text-textuserred">Pdg</span>
         </span>
@@ -438,41 +438,42 @@ const BerandaAwal = () => {
                 </li>
                 <li className="pb-[15px] flex">
                   <img
-                    src={fb}
-                    alt=""
-                    className="ml-3 mr-[5px] w-[25px] h-[25px]"
-                  />
-                  <span className="pt-[4px]"> Facebook</span>
-                </li>
-                <li className="pb-[15px] flex">
-                  <img
                     src={ig}
                     alt=""
-                    className=" mr-[5px] w-[25px] h-[25px]"
+                    className="ml-3 mr-[5px] w-[25px] h-[25px]"
                   />
                   <span className="pt-[4px]"> Instagram</span>
                 </li>
                 <li className="pb-[15px] flex">
                   <img
-                    src={yt}
+                    src={fb}
                     alt=""
-                    className="ml-3 mr-[5px] w-[25px] h-[25px]"
+                    className=" ml-[-5px] mt-[-5px] mr-[5px] w-[30px] h-[30px]"
                   />
-                  <span className="pt-[4px]">Youtube</span>
+                  <span className=" pt-[4px]"> Facebook</span>
                 </li>
                 <li className="pb-[15px] flex">
                   <img
                     src={tt}
                     alt=""
-                    className=" mr-[5px] w-[25px] h-[25px]"
+                    className="ml-3 mr-[5px] w-[25px] h-[25px]"
                   />
                   <span className="pt-[4px]">Tiktok</span>
+                </li>
+                <li className="pb-[15px] flex">
+                  <img
+                    src={yt}
+                    alt=""
+                    className=" mr-[5px] w-[25px] h-[25px]"
+                  />
+                  <span className="pt-[4px]">Youtube</span>
                 </li>
               </div>
             </ul>
           </div>
         </div>
       </div>
+      {/* footer end */}
     </div>
   );
 };
