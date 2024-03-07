@@ -10,6 +10,12 @@ import BerandaAwal from "./user/BerandaAwal";
 import Persyaratan from "./user/Persyaratan";
 import IsiFormulir from "./user/IsiFormulir";
 import DashboardAdmin from "./admin/DashboardAdmin";
+import InputGolDarah from "./admin/InputGolDarah";
+import DaftarPersyaratan from "./admin/DaftarPersyaratan";
+import BookingDarah from "./user/BookingDarah";
+import DaftarBooking from "./user/DaftarBooking";
+import Postingan from "./user/Postingan";
+import InputPostingan from "./user/InputPostingan";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +61,30 @@ const router = createBrowserRouter([
   {
     path: "/DasboardAdmin",
     element: <DashboardAdmin />,
+  },
+  {
+    path: "/InputGolDarah",
+    element: <InputGolDarah />,
+  },
+  {
+    path: "/DaftarPersyaratan",
+    element: <DaftarPersyaratan />,
+  },
+  {
+    path: "/BookingDarah",
+    element: <BookingDarah />,
+  },
+  {
+    path: "/DaftarBooking",
+    element: <DaftarBooking />,
+  },
+  {
+    path: "/Postingan",
+    element: <Postingan />,
+  },
+  {
+    path: "/InputPostingan",
+    element: <InputPostingan />,
   },
 
 ]);
