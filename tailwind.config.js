@@ -16,6 +16,9 @@ export default {
         bgdashbord: "#F2F2F2",
         bgimage: "#f7f7f7",
         textimg: "#9D9D9D",
+        aburam: "#F2F2F2",
+        donorO: "#8D1E2B",
+        selesai: "#00DC16",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":

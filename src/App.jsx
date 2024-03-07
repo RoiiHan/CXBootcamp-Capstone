@@ -9,6 +9,7 @@ import Beranda from "./user/Beranda";
 import BerandaAwal from "./user/BerandaAwal";
 import Persyaratan from "./user/Persyaratan";
 import IsiFormulir from "./user/IsiFormulir";
+import DashboardAdmin from "./admin/DashboardAdmin";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,11 @@ const router = createBrowserRouter([
     path: "/IsiFormulir",
     element: <IsiFormulir />,
   },
+  {
+    path: "/DasboardAdmin",
+    element: <DashboardAdmin />,
+  },
+
 ]);
 
 function App() {
