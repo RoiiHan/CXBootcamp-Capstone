@@ -143,8 +143,6 @@ const router = createBrowserRouter([
     path: "/InputPostingan",
     element: <InputPostingan />,
   },
-<<<<<<< HEAD
-=======
   {
     path: "/DaftarRsGolDarah",
     element: <DaftarRsGolDarah />,
@@ -154,7 +152,7 @@ const router = createBrowserRouter([
     element: <InputPersyaratan />,
   },
 
->>>>>>> 3a5f3fcfdb34a495664cf20e133cf288d926cd48
+
 ]);
 
 function App() {
