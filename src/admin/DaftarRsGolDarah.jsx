@@ -44,6 +44,7 @@ const DaftarRsGolDarah = () => {
                 <span className="text-[13px]">Ahli tht</span>
               </div>
             </div>
+<<<<<<< HEAD
             <div className="flex pt-0  w-[60px] h-[60px] mt-3  ">
               <img
                 src={Profil}
@@ -326,6 +327,276 @@ const DaftarRsGolDarah = () => {
       </div>
     </div>
   );
+=======
+            {/* SECTION DASHBOARD */}
+            <div className="flex mt-2 ">
+                <div className="bg-white w-52 h-[400px] flex  rounded-md">
+                    <nav className="text-border w-full cursor-pointer  ">
+                        <ul className=" flex flex-col text-[14px] ">
+                            <Link to="/DasboardAdmin">
+                                <li className=" p-[25px] pt-[10px] mt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={frame}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Dashboard
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
+                                    Input data
+                                </li>
+                            </Link>
+                            <Link to="/DaftarRsGolDarah">
+                                <li className=" p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md">
+                                    <img
+                                        src={droplet}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Gol Darah
+                                </li>
+                            </Link>
+
+                            <Link to="/DaftarPersyaratan">
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={fileearmark}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Persyaratan
+                                </li>
+                            </Link>
+                            <Link to="/DaftarArtikel" >
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={pen}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px] "
+                                    />{" "}
+                                    Artikel
+                                </li>
+                            </Link>
+                            <li className="p-[25px] pt-[10px] h-10  text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                Informasi
+                            </li>
+                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                <img
+                                    src={people}
+                                    alt="frame"
+                                    className="w-[20px] h-[20px] mr-[10px]"
+                                />{" "}
+                                Pendonor
+                            </li>
+                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                <img
+                                    src={peoplemin}
+                                    alt="frame"
+                                    className="w-[20px] h-[20px] mr-[10px]"
+                                />{" "}
+                                Butuh Darah
+                            </li>
+                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                <img
+                                    src={peopleplush}
+                                    alt="frame"
+                                    className="w-[20px] h-[20px] mr-[10px]"
+                                />{" "}
+                                Boking Darah
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                {/* SECTION HALAMAN */}
+                <div className="bg-white ml-3 rounded-md h-[700px] w-[850px] w-screen ">
+                    <div className="">
+                        <div className="">
+                            <div className="m-6 ml-8  p-auto h-[450px]">
+                                <span className="text-pdg font-bold text-[20px]">
+                                    DAFTAR
+                                </span>{" "}
+                                <span className="text-donor font-bold text-[20px]">
+                                    RUMAH SAKIT
+                                </span>
+                                <form action="" className="mt-5 flex">
+                                    <input
+                                        type="text"
+                                        placeholder="Cari Rumah Sakit"
+                                        className="outline-none placeholder-border border-border border-2 rounded-md w-[600px] h-10 p-4"
+                                    />
+                                    <Link
+                                        to="/InputGolDarah"
+                                        className="flex bg-tambahartikel rounded-md ml-[180px] w-[180px] h-10 font-semibold text-white p-[8px]"
+                                    >
+                                        <img
+                                            src={plush}
+                                            alt="plush"
+                                            className="m-[2px] mr-2 w-[20px] h-[20px]"
+                                        />{" "}
+                                        Tambah Artikel
+                                    </Link>
+                                </form>
+                                <table className="w-full mt-10">
+                                    <tr className="bg-aburam ">
+                                        <td className="py-3">Gambar</td>
+                                        <td>Nama/Alamat</td>
+                                        <td>Tipe Gol Darah</td>
+                                        <td>Jumlah Tersedia</td>
+                                        <td>Aksi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src={rs} alt="" className="py-3" />
+                                        </td>
+                                        <td>
+                                            <p>Semen Padang Hospital</p>
+                                            <p>Jl. Kuranji, Padang Timur.</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>A</p>
+                                            <p>B</p>
+                                            <p>AB</p>
+                                            <p>O</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>16</p>
+                                            <p>5</p>
+                                            <p>11</p>
+                                            <p>5</p>
+                                        </td>
+                                        <td>
+                                            <button className="flex w-[25px] ">
+                                                <img src={pencil} alt="" className="" />
+                                                <img src={smph} alt="" className="pl-[1px]" />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src={rs2} alt="" className="py-3" />
+                                        </td>
+                                        <td>
+                                            <p>Semen Padang Hospital</p>
+                                            <p>Jl. Kuranji, Padang Timur.</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>A</p>
+                                            <p>B</p>
+                                            <p>AB</p>
+                                            <p>O</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>16</p>
+                                            <p>5</p>
+                                            <p>11</p>
+                                            <p>5</p>
+                                        </td>
+                                        <td>
+                                            <button className="flex w-[25px] ">
+                                                <img src={pencil} alt="" className="" />
+                                                <img src={smph} alt="" className="pl-[1px]" />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src={rs} alt="" className="py-3" />
+                                        </td>
+                                        <td>
+                                            <p>Semen Padang Hospital</p>
+                                            <p>Jl. Kuranji, Padang Timur.</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>A</p>
+                                            <p>B</p>
+                                            <p>AB</p>
+                                            <p>O</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>16</p>
+                                            <p>5</p>
+                                            <p>11</p>
+                                            <p>5</p>
+                                        </td>
+                                        <td>
+                                            <button className="flex w-[25px] ">
+                                                <img src={pencil} alt="" className="" />
+                                                <img src={smph} alt="" className="pl-[1px]" />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src={rs2} alt="" className="py-3" />
+                                        </td>
+                                        <td>
+                                            <p>Semen Padang Hospital</p>
+                                            <p>Jl. Kuranji, Padang Timur.</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>A</p>
+                                            <p>B</p>
+                                            <p>AB</p>
+                                            <p>O</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>16</p>
+                                            <p>5</p>
+                                            <p>11</p>
+                                            <p>5</p>
+                                        </td>
+                                        <td>
+                                            <button className="flex w-[25px] ">
+                                                <img src={pencil} alt="" className="" />
+                                                <img src={smph} alt="" className="pl-[1px]" />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src={rs} alt="" className="py-3" />
+                                        </td>
+                                        <td>
+                                            <p>Semen Padang Hospital</p>
+                                            <p>Jl. Kuranji, Padang Timur.</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>A</p>
+                                            <p>B</p>
+                                            <p>AB</p>
+                                            <p>O</p>
+                                        </td>
+                                        <td className="text-center">
+                                            <p>16</p>
+                                            <p>5</p>
+                                            <p>11</p>
+                                            <p>5</p>
+                                        </td>
+                                        <td>
+                                            <button className="flex w-[25px] ">
+                                                <img src={pencil} alt="" className="" />
+                                                <img src={smph} alt="" className="pl-[1px]" />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button className="w-[120px] h-[42px] bg-donor p-auto text-white text-[18px] rounded-md mt-[35px] mb-10">
+                                    Simpan
+                                </button>
+                                <button className="w-[90px] h-[42px]  border-solid border-[3px] border-donor p-auto ml-5 text-donor text-[18px] rounded-md">
+                                    Batal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div >
+    );
+>>>>>>> be2383806f1a0751a985cf0583962a3079327feb
 };
 
 export default DaftarRsGolDarah;
