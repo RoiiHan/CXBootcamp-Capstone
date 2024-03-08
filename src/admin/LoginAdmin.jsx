@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const LoginAdmin = () => {
   return (
@@ -49,12 +50,12 @@ const LoginAdmin = () => {
                 Forgot password?
               </a>
             </div>
-            <a
-              href=""
+            <Link
+              to="/DasboardAdmin"
               className="rounded-md block bg-donor p-2 mt-8 text-white hover:shadow-xl hover:shadow-donor transition duration-300 "
             >
               Login
-            </a>
+            </Link>
           </form>
         </div>
       </div>

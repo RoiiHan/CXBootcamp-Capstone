@@ -27,19 +27,19 @@ const Beranda = () => {
           Donor.<span className="text-textuserred">Pdg</span>
         </span>
         <ul className="flex flex-rows text-white p-2 pr-4 gap-[30px] cursor-pointer">
-          <Link>
+          <Link to="/">
             <li>Jadwal Donor</li>
           </Link>
-          <Link>
+          <Link to="">
             <li>Booking Darah</li>
           </Link>
-          <Link>
+          <Link to="">
             <li>Stok Darah</li>
           </Link>
-          <Link>
+          <Link to="">
             <li>Informasi</li>
           </Link>
-          <Link>
+          <Link to="">
             <li>Kontak</li>
           </Link>
           <li className="mt-[-8px]">
