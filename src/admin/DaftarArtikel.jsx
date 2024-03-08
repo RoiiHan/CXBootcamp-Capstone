@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../index.css";
-import Profil from '../image/profil1.jpeg';
+import Profil from "../image/profil1.jpeg";
 import frame from "../component/Frame.png";
 import droplet from "../component/droplet-fill.png";
 import fileearmark from "../component/file-earmark-fill.png";
@@ -50,42 +50,47 @@ const DaftarArtikel = () => {
                 className="w-full h-auto rounded-full w-[50px] h-[50px]"
               />
             </div>
-            
           </div>
         </div>
       </div>
       {/* SECTION DASHBOARD */}
       <div className="flex mt-2">
-        <div className="bg-white w-[200px] h-[400px] flex  rounded-md">
-          <nav className="text-border w-[200px] cursor-pointer">
+        <div className="bg-white w-[250px] h-[400px] flex  rounded-md">
+          <nav className="text-border w-full cursor-pointer  ">
             <ul className=" flex flex-col text-[14px] ">
-              <li className=" p-[25px] pt-[10px] mt-[10px] h-10 flex">
-                <img
-                  src={frame}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />
-                Dashboard
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
-                Input data
-              </li>
-              <li className=" p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                <img
-                  src={droplet}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />
-                Gol Darah
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                <img
-                  src={fileearmark}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />
-                Persyaratan
-              </li>
+              <Link to="/LoginAdmin">
+                <li className=" p-[25px] pt-[10px] mt-[10px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 h-10 flex">
+                  <img
+                    src={frame}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />
+                  Dashboard
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
+                  Input data
+                </li>
+                <li className=" p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                  <img
+                    src={droplet}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />
+                  Gol Darah
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                  <img
+                    src={fileearmark}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />
+                  Persyaratan
+                </li>
+              </Link>
               <li
                 // className={`p-[25px] pt-[10px] h-10 ${
                 //   clicked ? "bg-donor text-white rounded-md" : "hover:bg-donor "
@@ -93,7 +98,7 @@ const DaftarArtikel = () => {
                 // onClick={() => setClicked(true)}
                 className="p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md"
               >
-                <Link to="/Daftar`Artikel" className="flex">
+                <Link to="/DaftarArtikel" className="flex">
                   <img
                     src={pen}
                     alt="frame"
@@ -102,33 +107,41 @@ const DaftarArtikel = () => {
                   Artikel
                 </Link>
               </li>
-              <li className="p-[25px] pt-[10px] h-10  text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                Informasi
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                <img
-                  src={people}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />{" "}
-                Pendonor
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                <img
-                  src={peoplemin}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />{" "}
-                Butuh Darah
-              </li>
-              <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                <img
-                  src={peopleplush}
-                  alt="frame"
-                  className="w-[20px] h-[20px] mr-[10px]"
-                />{" "}
-                Boking Darah
-              </li>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10  text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  Informasi
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  <img
+                    src={people}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />{" "}
+                  Pendonor
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  <img
+                    src={peoplemin}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />{" "}
+                  Butuh Darah
+                </li>
+              </Link>
+              <Link>
+                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                  <img
+                    src={peopleplush}
+                    alt="frame"
+                    className="w-[20px] h-[20px] mr-[10px]"
+                  />{" "}
+                  Boking Darah
+                </li>
+              </Link>
             </ul>
           </nav>
         </div>

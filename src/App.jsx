@@ -7,7 +7,7 @@ import Pendonor from "./admin/Pendonor";
 import DataPendonor from "./admin/DataPendonor";
 import ButuhDarah from "./admin/ButuhDarah";
 import DaftarPostingan from "./admin/DaftarPostingan";
-import BookingDarah from "./admin/BookingDarah";
+import BookingDarah1 from "./admin/BookingDarah1";
 import DataBooking from "./admin/DataBooking";
 import LoginUser from "./user/LoginUser";
 import RegisterUser from "./user/RegisterUser";
@@ -16,7 +16,16 @@ import Jadwal from "./user/Jadwal";
 import Surat from "./user/Surat";
 import StokDarah from "./user/StokDarah";
 import JadwalDonor from "./user/JadwalDonor";
-
+import BerandaAwal from "./user/BerandaAwal";
+import Persyaratan from "./user/Persyaratan";
+import IsiFormulir from "./user/IsiFormulir";
+import DashboardAdmin from "./admin/DashboardAdmin";
+import InputGolDarah from "./admin/InputGolDarah";
+import DaftarPersyaratan from "./admin/DaftarPersyaratan";
+import BookingDarah from "./user/BookingDarah";
+import DaftarBooking from "./user/DaftarBooking";
+import Postingan from "./user/Postingan";
+import InputPostingan from "./user/InputPostingan";
 
 
 const router = createBrowserRouter([
@@ -33,6 +42,7 @@ const router = createBrowserRouter([
     element: <DaftarArtikel />,
   },
   {
+
     path: "/Pendonor",
     element: <Pendonor />,
   },
@@ -49,8 +59,8 @@ const router = createBrowserRouter([
     element: <DaftarPostingan />,
   },
   {
-    path: "/BookingDarah",
-    element: <BookingDarah />,
+    path: "/BookingDarah1",
+    element: <BookingDarah1 />,
   },
   {
     path: "/DataBooking",
@@ -58,6 +68,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
+
+    path: "/DaftarArtikel",
+    element: <DaftarArtikel />,
+  },
+  {
+    path: "/LoginUser",
     element: <LoginUser />,
   },
   {
@@ -65,10 +81,15 @@ const router = createBrowserRouter([
     element: <RegisterUser />,
   },
   {
+    path: "/",
+    element: <BerandaAwal />,
+  },
+  {
     path: "/Beranda",
     element: <Beranda />,
   },
   {
+
     path: "/Jadwal",
     element: <Jadwal />,
   },
@@ -84,7 +105,42 @@ const router = createBrowserRouter([
     path: "/JadwalDonor",
     element: <JadwalDonor />,
   },
- 
+  {
+    path: "/Persyaratan",
+    element: <Persyaratan />,
+  },
+  {
+    path: "/IsiFormulir",
+    element: <IsiFormulir />,
+  },
+  {
+    path: "/DasboardAdmin",
+    element: <DashboardAdmin />,
+  },
+  {
+    path: "/InputGolDarah",
+    element: <InputGolDarah />,
+  },
+  {
+    path: "/DaftarPersyaratan",
+    element: <DaftarPersyaratan />,
+  },
+  {
+    path: "/BookingDarah",
+    element: <BookingDarah />,
+  },
+  {
+    path: "/DaftarBooking",
+    element: <DaftarBooking />,
+  },
+  {
+    path: "/Postingan",
+    element: <Postingan />,
+  },
+  {
+    path: "/InputPostingan",
+    element: <InputPostingan />,
+  },
 ]);
 
 function App() {

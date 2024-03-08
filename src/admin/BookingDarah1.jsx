@@ -9,14 +9,14 @@ import people from "../component/people-fill.png";
 import peoplemin from "../component/person-dash-fill.png";
 import peopleplush from "../component/person-plus-fill.png";
 import plush from "../component/eye-fill.png";
-import silang from "../component/Vector.png";
-import ceklis from "../component/x.png";
+import silang from "../component/ceklis.png";
+import ceklis from "../component/silang.png";
 import rectangle148 from "../component/Rectangle 148.png";
 import rectangle149 from "../component/Rectangle 149.png";
 import rectangle150 from "../component/Rectangle 150.png";
 import { Link } from "react-router-dom";
 
-const BookingDarah = () => {
+const BookingDarah1 = () => {
   return (
     <div className="h-screen font-poppins">
     {/* SECTION HEAD */}
@@ -504,4 +504,4 @@ const BookingDarah = () => {
   )
 }
 
-export default BookingDarah
+export default BookingDarah1

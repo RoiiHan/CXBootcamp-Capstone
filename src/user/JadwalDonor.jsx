@@ -53,7 +53,7 @@ const JadwalDonor = () => {
       <div className="bg-bgdashbord w-52 flex h-[470px]  rounded-md">
         <nav className="text-textuserabu  w-full cursor-pointer  ">
           <ul className="  flex flex-col  text-[14px] ">
-            <Link to="/">
+            <Link to="/Beranda">
               <li className=" p-[15px] pt-[10px] mt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={home}
@@ -63,7 +63,7 @@ const JadwalDonor = () => {
                 Beranda
               </li>
             </Link>
-            <Link to="/">
+            <Link to="/DonorDarah">
               <li className=" p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={bloodplus}
@@ -73,7 +73,7 @@ const JadwalDonor = () => {
                 Donor Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/JadwalDonor">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={jadwal}
@@ -83,7 +83,7 @@ const JadwalDonor = () => {
                 Jadwal Donor
               </li>
             </Link>
-            <Link to="">
+            <Link to="/BookingDarah">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={booking}
@@ -93,7 +93,7 @@ const JadwalDonor = () => {
                 Boking Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/DataDonor">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={data}
@@ -103,7 +103,7 @@ const JadwalDonor = () => {
                 Data Donor
               </li>
             </Link>
-            <Link to="">
+            <Link to="/ButuhDarah">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={butuh}
@@ -130,16 +130,17 @@ const JadwalDonor = () => {
               <span className="text-donor font-bold text-[20px]">
                 DONOR DARAH
               </span>
+              <div>
               <input
                 type="text"
                 placeholder="Cari Rumah Sakit"
                 className="outline-none placeholder-border border-border border-2 rounded-full mb-4 w-[400px] h-10 p-4 mx-auto "
               />
-
-              <div className="p- 10px flex justify-between mt-[80px] mr-[-150px]">
-        <div className="">
+              </div>
+              <div className="flex p- 10px mb-4 justify-between mt-[80px] mr-[-50px]">
+        <div className="grid grid-cols-2">
         
-            <div className="flex justify-between bg-donorburam w-[450px] shadow-xl  rounded-md  ">
+            <div className="justify-between bg-donorburam w-[450px] shadow-xl  rounded-md  ">
               <div className="flex">
                 <div>
                   <div className="p-3">

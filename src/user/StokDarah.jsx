@@ -6,7 +6,7 @@ import bloodplus from "../component/user/mdi_blood-plus-outline.png";
 import jadwal from "../component/user/Jadwal.png";
 import booking from "../component/user/streamline_blood-bag-donation.png";
 import data from "../component/user/icon-park-outline_data-all.png";
-import butuh from "../component/user/Butuh.png";
+import butuh from "../component/user/butuh.png";
 import syarat from "../component/user/syaarat.png";
 import isi from "../component/user/stok.png";
 import input from "../component/user/dftr.png";
@@ -56,7 +56,7 @@ const StokDarah = () => {
       <div className="bg-bgdashbord w-52 flex h-[470px]  rounded-md">
         <nav className="text-textuserabu  w-full cursor-pointer  ">
           <ul className="  flex flex-col  text-[14px] ">
-            <Link to="/">
+            <Link to="/Beranda">
               <li className=" p-[15px] pt-[10px] mt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={home}
@@ -130,7 +130,7 @@ const StokDarah = () => {
                 Stok Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/DaftarBooking">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={input}
@@ -165,14 +165,15 @@ const StokDarah = () => {
               <span className="text-donor font-bold text-[20px]">
                 DARAH
               </span>
-              <form action="" className="mt-3 flex">
+              <form action="" className="">
               <input
                 type="text"
                 placeholder="Cari Rumah Sakit"
-                className="outline-none placeholder-border border-border border-2 rounded-full mb-4 w-[400px] h-10 p-4 mx-auto "
+                className=" outline-none placeholder-border border-border border-2 rounded-full mb-4 w-[400px] h-10 p-4 mx-auto "
               />
               
-              <div class="relative w-full flex flex-col shadow-lg mb-6 flex">
+              
+              <div class=" w-full shadow-lg mb-6 ">
             <table className='w-auto'>
             <thead>
               <tr className="border border-solid border-l-0 bottom-0 ">
@@ -186,8 +187,8 @@ const StokDarah = () => {
             <thead className=' '>
               <tr className="">
                 <th class="text-md px-6 py-3 border-b border-gray-300 pb-2"> <img src={rectangle148} alt="" /></th>
-                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">Kevin</th>
-                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">Di butuhkan Segera Gol Darah A+</th>
+                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">A+</th>
+                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">11</th>
                 
                 
               </tr>
@@ -196,8 +197,8 @@ const StokDarah = () => {
             <thead className=' '>
               <tr className="">
                 <th class="text-md px-6 py-3 border-b border-gray-300 pb-2"> <img src={rectangle149 } alt="" /></th>
-                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">Kevin</th>
-                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">Di butuhkan Segera Gol Darah A+</th>
+                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">B</th>
+                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">2</th>
                 
                 
               </tr>
@@ -206,8 +207,8 @@ const StokDarah = () => {
             <thead className=' '>
               <tr className="">
                 <th class="text-md px-6 py-3 border-b border-gray-300 pb-2"> <img src={rectangle150} alt="" /></th>
-                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">Kevin</th>
-                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">Di butuhkan Segera Gol Darah A+</th>
+                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">O</th>
+                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">8</th>
                 
                 
               </tr>
@@ -216,9 +217,9 @@ const StokDarah = () => {
             <thead className=' '>
               <tr className="">
                 <th class="text-md px-6 py-3 border-b border-gray-300 pb-2"> <img src={rectangle149 } alt="" /></th>
-                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">Kevin</th>
-                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">Di butuhkan Segera Gol Darah A+</th>
-              ]
+                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">B-</th>
+                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">11</th>
+              
                
               </tr>
             </thead>
@@ -226,8 +227,8 @@ const StokDarah = () => {
             <thead className=' '>
               <tr className="">
                 <th class="text-md px-6 py-3 border-b border-gray-300 pb-2"> <img src={rectangle148} alt="" /></th>
-                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">Kevin</th>
-                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">Di butuhkan Segera Gol Darah A+</th>
+                <th class="text-md px-6 py-3 border-b border-gray-300 pb-2">a+</th>
+                <th class="text-md px-6 py-1 border-b border-gray-300 pb-2">8</th>
                 
                 
               </tr>

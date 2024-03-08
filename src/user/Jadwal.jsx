@@ -6,7 +6,7 @@ import bloodplus from "../component/user/mdi_blood-plus-outline.png";
 import jadwal from "../component/user/Jadwal.png";
 import booking from "../component/user/streamline_blood-bag-donation.png";
 import data from "../component/user/icon-park-outline_data-all.png";
-import butuh from "../component/user/Butuh.png";
+import butuh from "../component/user/butuh.png";
 import syarat from "../component/user/syaarat.png";
 import isi from "../component/user/isiformulir.png";
 import input from "../component/user/eos-icons_modified-date-outlined.png";
@@ -53,7 +53,7 @@ const Jadwal = () => {
       <div className="bg-bgdashbord w-52 flex h-[470px]  rounded-md">
         <nav className="text-textuserabu  w-full cursor-pointer  ">
           <ul className="  flex flex-col  text-[14px] ">
-            <Link to="/">
+            <Link to="/Beranda">
               <li className=" p-[15px] pt-[10px] mt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={home}
@@ -63,7 +63,7 @@ const Jadwal = () => {
                 Beranda
               </li>
             </Link>
-            <Link to="/">
+            <Link to="/Persyaratan">
               <li className=" p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={bloodplus}
@@ -73,7 +73,7 @@ const Jadwal = () => {
                 Donor Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/JadwalDonor">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={jadwal}
@@ -83,7 +83,7 @@ const Jadwal = () => {
                 Jadwal Donor
               </li>
             </Link>
-            <Link to="">
+            <Link to="/BookingDarah">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={booking}
@@ -93,7 +93,7 @@ const Jadwal = () => {
                 Boking Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/StokDarah">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={data}
@@ -103,7 +103,7 @@ const Jadwal = () => {
                 Data Donor
               </li>
             </Link>
-            <Link to="">
+            <Link to="/Postingan">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={butuh}
@@ -137,7 +137,7 @@ const Jadwal = () => {
                 Isi Formulir
               </li>
             </Link>
-            <Link to="">
+            <Link to="/Jadwal">
               <li className="p-[15px] pt-[10px] h-10  bg-donor text-white rounded-md flex">
                 <img
                   src={input}
@@ -147,7 +147,7 @@ const Jadwal = () => {
                 Input Jadwal{" "}
               </li>
             </Link>
-            <Link to="">
+            <Link to="/Surat">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={surat}
@@ -176,11 +176,11 @@ const Jadwal = () => {
                 DONOR DARAH
               </span>
 
-              <div className="p- 10px flex justify-between mt-[80px] mr-[-150px]">
-        <div className="">
+      <div className=" flex p- 10px mb-4 justify-between mt-[80px] mr-[-50px]">
+        <div className="grid grid-cols-2">
         
-            <div className="flex justify-between bg-donorburam w-[450px] shadow-xl  rounded-md  ">
-              <div className="flex">
+            <div className=" justify-between bg-donorburam w-[450px] shadow-xl  rounded-md  ">
+              <div className="flex ">
                 <div>
                   <div className="p-3">
                     <div className="text-[12px] text-donor">
@@ -281,7 +281,7 @@ const Jadwal = () => {
       </div>
      
       <div className="flex justify-between mt-[80px] mr-[-150px]">
-                  <Link className="" to="/Persyaratan">
+                  <Link className="" to="/IsiFormulir">
                     <button className="flex border-[1px] border-textuserabu text-textuserabu rounded-md  pt-2 pb-2 px-3">
                       <img
                         src={kembali}
@@ -291,7 +291,7 @@ const Jadwal = () => {
                       Kembali
                     </button>
                   </Link>
-                  <Link className="">
+                  <Link className="" to="/Surat">
                     <button className="flex bg-donor text-white rounded-md py-2 px-5">
                       Selanjutnya
                       <img src={panah} alt="" className="w-[25px] ml-2" />

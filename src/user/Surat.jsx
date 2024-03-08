@@ -6,7 +6,7 @@ import bloodplus from "../component/user/mdi_blood-plus-outline.png";
 import jadwal from "../component/user/Jadwal.png";
 import booking from "../component/user/streamline_blood-bag-donation.png";
 import data from "../component/user/icon-park-outline_data-all.png";
-import butuh from "../component/user/Butuh.png";
+import butuh from "../component/user/butuh.png";
 import syarat from "../component/user/syaarat.png";
 import isi from "../component/user/isiformulir.png";
 import input from "../component/user/eos-icons_modified-date-outlined.png";
@@ -53,7 +53,7 @@ const Surat = () => {
       <div className="bg-bgdashbord w-52 flex h-[470px]  rounded-md">
         <nav className="text-textuserabu  w-full cursor-pointer  ">
           <ul className="  flex flex-col  text-[14px] ">
-            <Link to="/">
+            <Link to="/Beranda">
               <li className=" p-[15px] pt-[10px] mt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={home}
@@ -63,7 +63,7 @@ const Surat = () => {
                 Beranda
               </li>
             </Link>
-            <Link to="/">
+            <Link to="/Persyaratan">
               <li className=" p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={bloodplus}
@@ -73,7 +73,7 @@ const Surat = () => {
                 Donor Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/JadwalDonor">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                 <img
                   src={jadwal}
@@ -83,7 +83,7 @@ const Surat = () => {
                 Jadwal Donor
               </li>
             </Link>
-            <Link to="">
+            <Link to="/BookingDarah">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={booking}
@@ -93,7 +93,7 @@ const Surat = () => {
                 Boking Darah
               </li>
             </Link>
-            <Link to="">
+            <Link to="/DataDonor">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={data}
@@ -103,7 +103,7 @@ const Surat = () => {
                 Data Donor
               </li>
             </Link>
-            <Link to="">
+            <Link to="/ButuhDarah">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={butuh}
@@ -137,7 +137,7 @@ const Surat = () => {
                 Isi Formulir
               </li>
             </Link>
-            <Link to="">
+            <Link to="/Jadwal">
               <li className="p-[15px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                 <img
                   src={input}
@@ -147,7 +147,7 @@ const Surat = () => {
                 Input Jadwal{" "}
               </li>
             </Link>
-            <Link to="">
+            <Link to="/Surat">
               <li className="p-[15px] pt-[10px] h-10  bg-donor text-white rounded-md flex">
                 <img
                   src={surat}
@@ -176,7 +176,7 @@ const Surat = () => {
                 DONOR DARAH
               </span>
 
-              <div className='p-10px flex justify-between mt-[20px] mr-[250px]'>
+              <div className='flex justify-center p-10px  mt-[20px] mr-[250px]'>
                   <img src={image5} alt="" className="w-[450px] justify-center p-10px" />
                 </div>
 

@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import group from "../component/user/gg_profile.png";
 import healt from "../component/user/health (4) 1.png";
-import bloods from "../component/user/lets-icons_blood-add.png";
+import download from "../component/user/material-symbols_download.png";
 import image from "../component/user/image 3.png";
 import image2 from "../component/user/image 4.png";
 import image3 from "../component/user/nurse 1.png";
@@ -18,7 +17,7 @@ import ig from "../component/user/Vector (1).png";
 import yt from "../component/user/ri_youtube-line.png";
 import tt from "../component/user/ic_baseline-tiktok.png";
 
-const Beranda = () => {
+const BerandaAwal = () => {
   return (
     <div className="font-poppins bg-white">
       {/* Navbar */}
@@ -43,13 +42,17 @@ const Beranda = () => {
             <li>Kontak</li>
           </Link>
           <li className="mt-[-8px]">
-            <img src={group} alt="" className=" w-[40px] h-[40px]" />
+            <Link to="/LoginUser" className="">
+              <button className=" ml-2 rounded-md h-[40px] text-[12px] text-white flex flex-rows bg-donorburam">
+                <span className="p-[20px] pt-3">Login</span>
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
 
       {/* Main1 */}
-      <div className="flex">
+      <div className="flex ">
         <div className="">
           <img src={healt} alt="" className="w-[400px] h-[300px]" />
         </div>
@@ -61,15 +64,22 @@ const Beranda = () => {
           <div className="font-bold text-textuserabu text-[18px]">
             Ayo donor darah dan hidup sehat sekarang dengan aplikasi Ayo Donor
           </div>
-          <div className="mt-[28px]">
+          <div className="mt-[28px] flex">
             <Link className="">
               <button className=" rounded-md  w-[160px] h-[40px] text-[12px] text-white flex flex-rows bg-donor">
                 <img
-                  src={bloods}
+                  src={download}
                   alt=""
                   className="m-[10px] ml-3 w-[20px] h-[20px]"
                 />{" "}
-                <span className="ml-[-2px] pt-3">Donor Sekarang</span>
+                <span className="ml-[-2px] pt-3">Unduh Sekarang</span>
+              </button>
+            </Link>
+            <Link className="">
+              <button className=" ml-7 rounded-md  hover:bg-white hover:border-[1px] hover:border-solid hover:border-black hover:text-textuserabu transition-500 w-[160px] h-[40px] text-[12px] text-white flex flex-rows bg-donorburam">
+                <span className="ml-[25px] pt-3 pb-3 hover:pt-3 ">
+                  Login dengan Web
+                </span>
               </button>
             </Link>
           </div>
@@ -89,7 +99,7 @@ const Beranda = () => {
             penerima darah <br /> untuk terhubung dan berinteraksi
           </span>
         </div>
-        <div className="mt-[60px] flex justify-center">
+        <div className="mt-[60px] flex justify-center cursor-pointer">
           <div className=" grid grid-cols-3 gap-[60px]">
             <div className="rounded-md w-[300px] text-center text-textuserabu font-semibold text-[14px] h-[320px] bg-donorburam">
               <img src={image} alt="" className="p-5" />
@@ -120,13 +130,13 @@ const Beranda = () => {
 
       {/* Artikel Terbaru */}
       <div className="mt-10">
-        <div className="flex justify-between p-8">
+        <div className="flex justify-between cursor-pointer p-8">
           <span className="font-bold text-textuserabu text-[20px]">
             Artikel Terbaru
           </span>
           <span className="text-donor font-medium">Lihat Semua</span>
         </div>
-        <div className=" flex justify-center">
+        <div className=" cursor-pointer flex justify-center ">
           <div className="grid grid-cols-2 gap-10">
             <div className="bg-donorburam shadow-xl w-[500px] rounded-md ">
               <img src={image4} alt="" />
@@ -414,7 +424,6 @@ const Beranda = () => {
               <li className="pb-[15px]">Jadwal Cek Darah</li>
             </ul>
           </div>
-          {/* footer */}
           <div className="">
             <ul className="list-none pt-[30px]">
               <li className="font-medium pb-7 text-[12px]">Follow Kami di</li>
@@ -462,11 +471,11 @@ const Beranda = () => {
               </div>
             </ul>
           </div>
-          {/* footer end */}
         </div>
       </div>
+      {/* footer end */}
     </div>
   );
 };
 
-export default Beranda;
+export default BerandaAwal;
