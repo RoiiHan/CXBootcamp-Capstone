@@ -129,7 +129,7 @@ const Postingan = () => {
                                     Stok Darah
                                 </li>
                             </Link>
-                            <Link to="DaftarBooking">
+                            <Link to="/DaftarBooking">
                                 <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                                     <img
                                         src={linerabu}
