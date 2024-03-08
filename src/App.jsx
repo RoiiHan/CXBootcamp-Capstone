@@ -3,9 +3,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LoginAdmin from "./admin/LoginAdmin";
 import InputArtikel from "./admin/InputArtikel";
 import DaftarArtikel from "./admin/DaftarArtikel";
+import Pendonor from "./admin/Pendonor";
+import DataPendonor from "./admin/DataPendonor";
+import ButuhDarah from "./admin/ButuhDarah";
+import DaftarPostingan from "./admin/DaftarPostingan";
+import BookingDarah1 from "./admin/BookingDarah1";
+import DataBooking from "./admin/DataBooking";
 import LoginUser from "./user/LoginUser";
 import RegisterUser from "./user/RegisterUser";
 import Beranda from "./user/Beranda";
+import Jadwal from "./user/Jadwal";
+import Surat from "./user/Surat";
+import StokDarah from "./user/StokDarah";
+import JadwalDonor from "./user/JadwalDonor";
 import BerandaAwal from "./user/BerandaAwal";
 import Persyaratan from "./user/Persyaratan";
 import IsiFormulir from "./user/IsiFormulir";
@@ -18,6 +28,7 @@ import Postingan from "./user/Postingan";
 import InputPostingan from "./user/InputPostingan";
 import DaftarRsGolDarah from "./admin/DaftarRsGolDarah";
 import InputPersyaratan from "./admin/InputPersyaratan";
+
 
 const router = createBrowserRouter([
   {
@@ -33,6 +44,33 @@ const router = createBrowserRouter([
     element: <DaftarArtikel />,
   },
   {
+
+    path: "/Pendonor",
+    element: <Pendonor />,
+  },
+  {
+    path: "/DataPendonor",
+    element: <DataPendonor />,
+  },
+  {
+    path: "/ButuhDarah",
+    element: <ButuhDarah />,
+  },
+  {
+    path: "/DaftarPostingan",
+    element: <DaftarPostingan />,
+  },
+  {
+    path: "/BookingDarah1",
+    element: <BookingDarah1 />,
+  },
+  {
+    path: "/DataBooking",
+    element: <DataBooking />,
+  },
+  {
+    path: "/",
+
     path: "/DaftarArtikel",
     element: <DaftarArtikel />,
   },
@@ -51,6 +89,23 @@ const router = createBrowserRouter([
   {
     path: "/Beranda",
     element: <Beranda />,
+  },
+  {
+
+    path: "/Jadwal",
+    element: <Jadwal />,
+  },
+  {
+    path: "/Surat",
+    element: <Surat />,
+  },
+  {
+    path: "/StokDarah",
+    element: <StokDarah />,
+  },
+  {
+    path: "/JadwalDonor",
+    element: <JadwalDonor />,
   },
   {
     path: "/Persyaratan",
@@ -88,6 +143,8 @@ const router = createBrowserRouter([
     path: "/InputPostingan",
     element: <InputPostingan />,
   },
+<<<<<<< HEAD
+=======
   {
     path: "/DaftarRsGolDarah",
     element: <DaftarRsGolDarah />,
@@ -97,6 +154,7 @@ const router = createBrowserRouter([
     element: <InputPersyaratan />,
   },
 
+>>>>>>> 3a5f3fcfdb34a495664cf20e133cf288d926cd48
 ]);
 
 function App() {

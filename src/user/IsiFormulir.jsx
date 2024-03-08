@@ -272,7 +272,7 @@ const IsiFormulir = () => {
                       Kembali
                     </button>
                   </Link>
-                  <Link className="">
+                  <Link className="" to="/Jadwal">
                     <button className="flex bg-donor text-white rounded-md py-2 px-5">
                       Selanjutnya
                       <img src={panah} alt="" className="w-[25px] ml-2" />
