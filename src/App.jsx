@@ -16,6 +16,7 @@ import BookingDarah from "./user/BookingDarah";
 import DaftarBooking from "./user/DaftarBooking";
 import Postingan from "./user/Postingan";
 import InputPostingan from "./user/InputPostingan";
+import DaftarRsGolDarah from "./admin/DaftarRsGolDarah";
 
 const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
   {
     path: "/InputPostingan",
     element: <InputPostingan />,
+  },
+  {
+    path: "/DaftarRsGolDarah",
+    element: <DaftarRsGolDarah />,
   },
 
 ]);
