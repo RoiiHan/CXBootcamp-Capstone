@@ -59,43 +59,52 @@ const DaftarRsGolDarah = () => {
                 <div className="bg-white w-52 h-[400px] flex  rounded-md">
                     <nav className="text-border w-full cursor-pointer  ">
                         <ul className=" flex flex-col text-[14px] ">
-                            <li className=" p-[25px] pt-[10px] mt-[10px] h-10 flex">
-                                <img
-                                    src={frame}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Dashboard
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
-                                Input data
-                            </li>
-                            <li className=" p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md">
-                                <img
-                                    src={droplet}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Gol Darah
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                                <img
-                                    src={fileearmark}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Persyaratan
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                                <Link to="/DaftarArtikel" className="flex">
+                            <Link to="/DasboardAdmin">
+                                <li className=" p-[25px] pt-[10px] mt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={frame}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Dashboard
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10 text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300">
+                                    Input data
+                                </li>
+                            </Link>
+                            <Link to="/DaftarRsGolDarah">
+                                <li className=" p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md">
+                                    <img
+                                        src={droplet}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Gol Darah
+                                </li>
+                            </Link>
+
+                            <Link to="/DaftarPersyaratan">
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={fileearmark}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Persyaratan
+                                </li>
+                            </Link>
+                            <Link to="/DaftarArtikel" >
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
                                     <img
                                         src={pen}
                                         alt="frame"
                                         className="w-[20px] h-[20px] mr-[10px] "
                                     />{" "}
                                     Artikel
-                                </Link>
-                            </li>
+                                </li>
+                            </Link>
                             <li className="p-[25px] pt-[10px] h-10  text-black font-semibold text-[15px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
                                 Informasi
                             </li>
@@ -311,7 +320,7 @@ const DaftarRsGolDarah = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

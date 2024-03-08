@@ -51,85 +51,101 @@ const DaftarBooking = () => {
                 <div className="bg-aburam w-[200px] h-[400px] flex  rounded-md">
                     <nav className="text-border w-[200px] cursor-pointer">
                         <ul className=" flex flex-col text-[14px] ">
-                            <li className=" p-[25px] pt-[10px] mt-[10px] h-10  hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                                <img
-                                    src={home}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Beranda
-                            </li>
-
-                            <li className=" p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                                <img
-                                    src={bloodplus}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Donor Darah
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                                <img
-                                    src={date}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Jadwal Donor
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                                <img
-                                    src={bloodbag}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />{" "}
-                                Booking Darah
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                                <img
-                                    src={icon}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Data Donor
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
-                                <img
-                                    src={hand}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />
-                                Butuh Darah
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10  text-border font-bold text-[12px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                                Informasi
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                                <img
-                                    src={bloodcheck}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />{" "}
-                                Stok Darah
-                            </li>
-                            <li className="p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md">
-                                <Link to="/DaftarBooking" className="flex">
+                            <Link to="/Beranda">
+                                <li className=" p-[25px] pt-[10px] mt-[10px] h-10  hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                    <img
+                                        src={home}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Beranda
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className=" p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={bloodplus}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Donor Darah
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={date}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Jadwal Donor
+                                </li>
+                            </Link>
+                            <Link to="/BookingDarah">
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                    <img
+                                        src={bloodbag}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />{" "}
+                                    Booking Darah
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={icon}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Data Donor
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300 flex">
+                                    <img
+                                        src={hand}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />
+                                    Butuh Darah
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10  text-border font-bold text-[12px] hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                    Informasi
+                                </li>
+                            </Link>
+                            <Link>
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                    <img
+                                        src={bloodcheck}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />{" "}
+                                    Stok Darah
+                                </li>
+                            </Link>
+                            <Link to="/DaftarBooking" className="flex">
+                                <li className="p-[25px] pt-[10px] h-10 bg-donor text-white flex rounded-md">
                                     <img
                                         src={lines}
                                         alt="frame"
                                         className="w-[20px] h-[20px] mr-[10px] "
                                     />{" "}
                                     Daftar Booking
-                                </Link>
-                            </li>
-
-                            <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
-                                <img
-                                    src={post}
-                                    alt="frame"
-                                    className="w-[20px] h-[20px] mr-[10px]"
-                                />{" "}
-                                Postingan
-                            </li>
+                                </li>
+                            </Link>
+                            <Link to="/Postingan">
+                                <li className="p-[25px] pt-[10px] h-10 hover:bg-donor hover:rounded-md hover:opacity-50 hover:text-white transition-300  flex">
+                                    <img
+                                        src={post}
+                                        alt="frame"
+                                        className="w-[20px] h-[20px] mr-[10px]"
+                                    />{" "}
+                                    Postingan
+                                </li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>
@@ -192,7 +208,7 @@ const DaftarBooking = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
